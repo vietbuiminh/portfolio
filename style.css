@@ -36,7 +36,7 @@ body {
   stroke-dashoffset: 1063;
   opacity: 0;
   transition: opacity 2s ease-in;
-  animation: vietbui 4s ease-out;
+  animation: vietbui 5s ease;
   animation-fill-mode: forwards;
 }
 
@@ -47,12 +47,25 @@ body {
   }
 }
 
-button {
-  border: none;
-  color: white;
+.link a {
+  background: rgba(47, 224, 186, 0.575);
+  border-radius: 30px;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.link a:hover {
+  background: rgb(47, 224, 186);
+}
+
+@media only screen and (max-width: 768px) {
+  .signature svg {
+    width: 70%;
+  }
 }
