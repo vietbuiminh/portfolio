@@ -3,3 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    position: relative;
+}
+.container {
+    display: grid;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+.signature, .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signature svg {
+    width: 30%;
+}
+
+#cls-1{
+    stroke-width: 20px;
+    stroke-dasharray: 1063;
+    stroke-dashoffset: 1063;
+    animation: vietbui 4s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes vietbui {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
