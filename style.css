@@ -1,37 +1,45 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    position: relative;
+  position: relative;
+  background: black;
 }
 .container {
-    display: grid;
-    height: 100vh;
-    position: relative;
-    width: 100%;
+  display: grid;
+  height: 100vh;
+  position: relative;
+  width: 100%;
 }
-.signature, .link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.signature,
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .signature svg {
-    width: 30%;
+  width: 30%;
 }
-
-#cls-1{
-    stroke-width: 20px;
-    stroke-dasharray: 1063;
-    stroke-dashoffset: 1063;
-    animation: vietbui 4s ease-out;
-    animation-fill-mode: forwards;
+.signature svg path {
+  transform: translate(10px, 10px);
+}
+#cls-1 {
+  stroke: white;
+  stroke-width: 20px;
+  stroke-dasharray: 1063;
+  stroke-dashoffset: 1063;
+  opacity: 0;
+  transition: opacity 2s ease-in;
+  animation: vietbui 4s ease-out;
+  animation-fill-mode: forwards;
 }
 
 @keyframes vietbui {
-    to {
-        stroke-dashoffset: 0;
-    }
+  to {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
 }
