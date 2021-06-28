@@ -3,15 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   position: relative;
   background: black;
+  font-family: "Darker Grotesque", sans-serif;
 }
 .container {
   display: grid;
   height: 100vh;
   position: relative;
   width: 100%;
+  color: white;
 }
 .signature,
 .link {
@@ -42,4 +45,14 @@ body {
     opacity: 1;
     stroke-dashoffset: 0;
   }
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
