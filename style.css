@@ -1,3 +1,7 @@
+:root {
+  --backgroundcolor: white;
+  --textcolor: rgb(59, 59, 59);
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,36 +10,35 @@
 
 body {
   position: relative;
-  background: black;
+  background: var(--backgroundcolor);
   font-family: "Darker Grotesque", sans-serif;
+  font-weight: 400;
+  font-size: 1.4em;
 }
+/* Section for the temporary page
+  !Keep for this time
+*/
 .container {
   display: grid;
   height: 100vh;
   position: relative;
   width: 100%;
-  color: white;
-}
-.signature,
-.link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
+/* IMPORTANT KEEP */
 .signature svg {
-  width: 30%;
+  width: 200px;
 }
 .signature svg path {
   transform: translate(10px, 10px);
 }
 #cls-1 {
-  stroke: white;
+  stroke: var(--textcolor);
   stroke-width: 20px;
   stroke-dasharray: 1063;
   stroke-dashoffset: 1063;
   opacity: 0;
-  transition: opacity 2s ease-in;
+  transition: opacity 1s ease-in;
   animation: vietbui 5s ease;
   animation-fill-mode: forwards;
 }
@@ -46,29 +49,4 @@ body {
     stroke-dashoffset: 0;
   }
 }
-.link {
-  flex-wrap: wrap;
-}
-.link a {
-  margin: 5px 10px 5px 10px;
-  background: rgba(47, 224, 186, 0.575);
-  border-radius: 30px;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 500;
-  backdrop-filter: saturate(180%) blur(20px);
-}
 
-.link a:hover {
-  background: rgb(47, 224, 186);
-}
-
-@media only screen and (max-width: 768px) {
-  .signature svg {
-    width: 70%;
-  }
-}
