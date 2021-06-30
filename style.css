@@ -21,18 +21,18 @@ body {
 
 p {
   display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   margin: 14px 0;
-  font-size: 0.9em;
-  line-height: 1.2;
+  line-height: 1.5rem;
 }
 
 header {
   color: #fff;
-  background: radial-gradient(#000c 75%,#000d),url('./img/cover.jpg') 50%/cover #0000;
+  background: radial-gradient(#000c 75%, #000d),
+    url("./img/cover.jpg") 50% / cover #0000;
   height: 100vh;
   position: fixed;
   display: flex;
@@ -73,21 +73,26 @@ span a {
   flex-grow: 1;
 }
 
-main, footer {
+main,
+footer {
   display: block;
   margin: 0 0 0 40%;
-  padding: 3.4rem 1.5rem 1.5rem 1.5rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 0.7;
   margin: 1rem 0 1rem 0;
+  font-weight: 900;
 }
 a {
   color: var(--linkcolor);
 }
 h1 {
-  font-weight: 900;
   font-size: 3em;
 }
 
@@ -95,12 +100,6 @@ footer {
   display: flex;
   justify-content: flex-end;
 }
-
-
-
-
-
-
 
 /* IMPORTANT KEEP */
 .signature svg {
@@ -129,3 +128,21 @@ footer {
 }
 /* End of IMPORTANT */
 
+@media (max-width: 60em) {
+  body > * {
+    width: 100%;
+  }
+
+  header {
+    min-height: 50vh;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main,
+  footer {
+    margin: 0;
+  }
+}
