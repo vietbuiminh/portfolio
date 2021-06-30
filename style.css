@@ -107,6 +107,8 @@ h6 {
   line-height: 0.7;
   margin: 1rem 0 1rem 0;
   font-weight: 900;
+  animation: h1transition 1s ease-out;
+  animation-fill-mode: forwards;
 }
 .link, #active {
   color: var(--linkcolor);
@@ -182,6 +184,18 @@ footer {
   to {
     opacity: 1;
   }
+}
+
+@keyframes h1transition {
+  from {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  
 }
 /* End of IMPORTANT */
 
