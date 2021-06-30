@@ -40,12 +40,15 @@ p {
 }
 
 header {
-  color: #fff;
   height: 100vh;
   position: fixed;
   display: flex;
   flex-direction: column;
   width: 40%;
+}
+
+header span, a{
+  color: #fff;
 }
 
 body > * {
@@ -60,11 +63,6 @@ nav {
 .homelink a,
 .navlinks a {
   text-decoration: none;
-  color: #fff;
-}
-
-.active {
-  color: rgb(207, 4, 4);
 }
 
 .homelink a {
@@ -109,7 +107,7 @@ h6 {
   margin: 1rem 0 1rem 0;
   font-weight: 900;
 }
-a {
+.link, #active {
   color: var(--linkcolor);
 }
 
@@ -120,6 +118,10 @@ h1 {
 footer {
   display: flex;
   justify-content: space-between;
+}
+
+.contact {
+  display: flex;
 }
 
 /* IMPORTANT KEEP */
