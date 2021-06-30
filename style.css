@@ -23,11 +23,24 @@ p {
   margin: 1em 0;
   line-height: 1.3em;
 }
+/* Background image for each pages */
+.about-bg {
+  background: radial-gradient(#000c 75%, #000d),
+    url("./img/cover.jpg") 50% / cover #0000;
+}
+
+.art-bg {
+  background: radial-gradient(#000c 75%, #000d),
+    url("./art/img/cover.png") 50% / cover #0000;
+}
+
+.coding-bg {
+  background: radial-gradient(#000c 75%, #000d),
+    url("./coding/img/cover.png") 50% / cover #0000;
+}
 
 header {
   color: #fff;
-  background: radial-gradient(#000c 75%, #000d),
-    url("./img/cover.jpg") 50% / cover #0000;
   height: 100vh;
   position: fixed;
   display: flex;
