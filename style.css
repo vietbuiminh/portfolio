@@ -191,7 +191,7 @@ footer {
   }
 
   header {
-    min-height: 60vh;
+    min-height: 500px;
     height: auto;
     position: relative;
     display: flex;
@@ -201,5 +201,9 @@ footer {
   main,
   footer {
     margin: 0;
+  }
+
+  .contact {
+    flex-wrap: wrap;
   }
 }
