@@ -87,7 +87,7 @@ nav {
 }
 
 .signature h1 {
-  font-size: 10vw;
+  font-size: 120px;
   transition: opacity 1s ease-in;
   animation: h1title 3s ease;
   animation-fill-mode: forwards;
