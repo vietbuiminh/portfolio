@@ -145,7 +145,7 @@ footer {
   border-radius: 10px;
 }
 
-.gallery:hover, .tags a:hover{
+.gallery:hover, .tag:hover{
   border: 1px solid #777;
 }
 
@@ -181,7 +181,10 @@ footer {
 }
 
 .tags a{
-  margin: 0.2em;
+  margin: 0.1em;
+}
+
+.tag, .button {
   padding: 0 10px 2px 10px;
   border: 1px solid #ccc;
   border-radius: 1em;
