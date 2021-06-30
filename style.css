@@ -190,6 +190,10 @@ footer {
   border-radius: 1em;
 }
 
+.button {
+  content: '&#x2192';
+}
+
 .button:hover {
   background: var(--linkcolor);
   color: #fff;
