@@ -122,6 +122,7 @@ h1 {
 footer {
   display: flex;
   justify-content: space-between;
+  border-top: solid 1px rgb(175, 175, 175);
 }
 
 .contact {
