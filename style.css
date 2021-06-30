@@ -86,7 +86,7 @@ nav {
 
 .signature h1 {
   color: #fff;
-  font-size: 120px;
+  font-size: 100px;
   transition: opacity 1s ease-in;
   animation: h1title 3s ease;
   animation-fill-mode: forwards;
@@ -165,14 +165,13 @@ footer {
   padding: 0.5em;
   font-size: 0.9em;
 }
+
 /* Animation for hover */
 .hover-underline-animation {
   display: inline-block;
   position: relative;
 }
-.more {
-  width: auto;
-}
+
 .hover-underline-animation::after {
   content: '';
   position: absolute;
@@ -272,5 +271,15 @@ footer {
 
   .contact {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 45em) {
+  .gallery {
+    display: block;
+  }
+
+  .gallery img {
+    width: 100%;
   }
 }
