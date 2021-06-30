@@ -125,6 +125,10 @@ footer {
   display: flex;
 }
 
+a:hover {
+  color: rgb(255, 136, 0);
+}
+
 /* IMPORTANT KEEP */
 .signature svg {
   width: 300px;
