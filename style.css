@@ -44,7 +44,8 @@ nav {
   justify-content: space-between;
 }
 
-span a {
+.homelink a,
+.navlinks a {
   text-decoration: none;
   color: #fff;
 }
@@ -93,13 +94,13 @@ h1 {
 
 footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 /* IMPORTANT KEEP */
 .signature svg {
   width: 300px;
-  height: 300px;
+  height: 280px;
 }
 .signature svg path {
   transform: translate(10px, 10px);
@@ -129,7 +130,7 @@ footer {
   }
 
   header {
-    min-height: 50vh;
+    min-height: 60vh;
     height: auto;
     position: relative;
     display: flex;
