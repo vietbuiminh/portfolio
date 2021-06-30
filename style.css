@@ -85,6 +85,7 @@ nav {
 }
 
 .signature h1 {
+  color: #fff;
   font-size: 120px;
   transition: opacity 1s ease-in;
   animation: h1title 3s ease;
