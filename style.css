@@ -1,3 +1,9 @@
+:root {
+  --backgroundcolor: white;
+  --textcolor: rgb(59, 59, 59);
+  --linkcolor: rgb(207, 4, 4);
+  --footercolor: rgb(36, 0, 0);
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,36 +12,111 @@
 
 body {
   position: relative;
-  background: black;
+  background: var(--backgroundcolor);
   font-family: "Darker Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+  color: var(--textcolor);
 }
-.container {
-  display: grid;
+
+p {
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  margin: 14px 0;
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+
+header {
+  color: #fff;
+  background: radial-gradient(#000c 75%,#000d),url('./img/cover.jpg') 50%/cover #0000;
   height: 100vh;
-  position: relative;
-  width: 100%;
-  color: white;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 }
-.signature,
-.link {
+
+body > * {
+  padding: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+span a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.homelink a {
+  font-weight: 700;
+}
+
+.navlinks {
+  display: flex;
+}
+
+.divider {
+  padding: 0 10px 0 10px;
+}
+
+.signature {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }
 
+main, footer {
+  display: block;
+  margin: 0 0 0 40%;
+  padding: 3.4rem 1.5rem 1.5rem 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 0.7;
+  margin: 1rem 0 1rem 0;
+}
+a {
+  color: var(--linkcolor);
+}
+h1 {
+  font-weight: 900;
+  font-size: 3em;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
+
+
+
+/* IMPORTANT KEEP */
 .signature svg {
-  width: 30%;
+  width: 300px;
+  height: 300px;
 }
 .signature svg path {
   transform: translate(10px, 10px);
 }
 #cls-1 {
-  stroke: white;
+  stroke: #fff;
   stroke-width: 20px;
   stroke-dasharray: 1063;
   stroke-dashoffset: 1063;
   opacity: 0;
-  transition: opacity 2s ease-in;
+  transition: opacity 1s ease-in;
   animation: vietbui 5s ease;
   animation-fill-mode: forwards;
 }
@@ -46,29 +127,5 @@ body {
     stroke-dashoffset: 0;
   }
 }
-.link {
-  flex-wrap: wrap;
-}
-.link a {
-  margin: 5px 10px 5px 10px;
-  background: rgba(47, 224, 186, 0.575);
-  border-radius: 30px;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 500;
-  backdrop-filter: saturate(180%) blur(20px);
-}
+/* End of IMPORTANT */
 
-.link a:hover {
-  background: rgb(47, 224, 186);
-}
-
-@media only screen and (max-width: 768px) {
-  .signature svg {
-    width: 70%;
-  }
-}
