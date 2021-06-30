@@ -134,12 +134,45 @@ footer {
   animation: shake 0.5s infinite;
 }
 
+/* Image Gallery */
+
+.gallery {
+  display: flex;
+  margin-bottom: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery a, .gallery p{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+}
+
+.gallery img {
+  border-radius: 10px;
+  width: 20vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.desc {
+  padding: 0.5em;
+  font-size: 0.9em;
+}
 /* Animation for hover */
 .hover-underline-animation {
   display: inline-block;
   position: relative;
 }
-
+.more {
+  width: auto;
+}
 .hover-underline-animation::after {
   content: '';
   position: absolute;
