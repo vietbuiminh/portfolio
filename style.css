@@ -110,6 +110,7 @@ h6 {
 }
 .link, #active {
   color: var(--linkcolor);
+  text-decoration: none;
 }
 
 h1 {
@@ -125,8 +126,27 @@ footer {
   display: flex;
 }
 
-a:hover {
-  color: rgb(255, 136, 0);
+/* Animation for hover */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1em;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 0, 0, 0.214);
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
 }
 
 /* IMPORTANT KEEP */
