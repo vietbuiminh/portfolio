@@ -159,7 +159,7 @@ h1 {
         drop-shadow(-2px 2px 0 white)
         drop-shadow(2px -5px 0 white)
         drop-shadow(-2px 2px 0 white)
-        drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+        drop-shadow(0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
 }
 
 footer {
