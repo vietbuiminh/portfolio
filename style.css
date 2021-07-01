@@ -402,3 +402,9 @@ footer {
     font-size: 4rem;
   }
 }
+
+@media (max-width: 30em) {
+  nav {
+    display: block;
+  }
+}
