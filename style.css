@@ -53,8 +53,7 @@ header {
   width: 40%;
 }
 
-header span,
-a {
+header span {
   color: #fff;
 }
 
@@ -70,6 +69,7 @@ nav {
 .homelink a,
 .navlinks a {
   text-decoration: none;
+  color: #fff;
 }
 
 .homelink a {
@@ -125,6 +125,20 @@ h6 {
 
 h1 {
   font-size: 3em;
+}
+
+.imgrow {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  gap: 10px;
+}
+
+.imgrow img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale();
 }
 
 footer {
