@@ -366,4 +366,8 @@ footer {
     border-right: none;
     border-bottom: 1px solid #ccc;
   }
+
+  h1 {
+    font-size: 4rem;
+  }
 }
