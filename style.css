@@ -128,6 +128,7 @@ h1 {
 }
 
 .imgrow {
+  position: relative;
   display: grid;
   grid-template-columns: 1.5fr 0.7fr 1.5fr;
   gap: 10px;
@@ -138,7 +139,27 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.grayscl {
   filter: grayscale();
+}
+
+.sticker {
+  position: absolute;
+  display: flex;
+  transform: rotate(20deg);
+  width: 10%;
+  bottom: 10%;
+  left: 35%
+}
+
+.sticker img{
+  filter: drop-shadow(2px 2px 0 white)
+        drop-shadow(-2px 2px 0 white)
+        drop-shadow(2px -5px 0 white)
+        drop-shadow(-2px 2px 0 white)
+        drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
 footer {
