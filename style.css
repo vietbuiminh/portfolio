@@ -151,11 +151,19 @@ footer {
   display: flex;
 }
 
+.text {
+  text-align: right;
+}
 .text:hover {
   cursor: pointer;
   animation: shake 0.5s infinite;
 }
 
+#modifiedDate {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
 /* Image Gallery */
 
 .gallery {
