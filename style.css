@@ -27,7 +27,6 @@ p {
 
 img {
   max-width: 900px;
-  height: auto;
 }
 /* Background image for each pages */
 .about-bg {
@@ -72,6 +71,10 @@ nav {
   color: #fff;
 }
 
+.homelink {
+  display: flex;
+  align-items: center;
+}
 .homelink a {
   font-weight: 700;
 }
