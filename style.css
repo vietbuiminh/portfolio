@@ -154,7 +154,7 @@ h1 {
   width: 10%;
   bottom: 10%;
   left: 35%;
-  transition: transform 0.5s ease;
+  transition: transform 0.2s ease;
 }
 
 .sticker img{
