@@ -12,12 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="./img/SVG/favicon.svg" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
     <header class="about-bg">
         
-        {% include "nav.html" %}
+        <div id="nav-placeholder">
+        </div>
+
         <div class="signature">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" fill="none">
                 <path id="cls-1"
@@ -179,6 +183,11 @@
     </footer>
 
     <script src="./app.js"></script>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
 </body>
 
 </html>
