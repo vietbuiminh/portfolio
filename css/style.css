@@ -28,20 +28,21 @@ p {
 img {
   max-width: 900px;
 }
+
 /* Background image for each pages */
 .about-bg {
   background: radial-gradient(#000c 0%, #000d),
-    url("./img/cover.jpg") 50% / cover #0000;
+    url("../img/cover.jpg") 50% / cover #0000;
 }
 
 .art-bg {
   background: radial-gradient(#000c 75%, #000d),
-    url("./art/img/cover.png") 50% / cover #0000;
+    url("../img/art-cover.png") 50% / cover #0000;
 }
 
 .coding-bg {
   background: radial-gradient(#000c 75%, #000d),
-    url("./coding/img/cover.png") 50% / cover #0000;
+    url("../img/coding-cover.png") 50% / cover #0000;
 }
 
 header {
@@ -110,18 +111,27 @@ footer {
   margin: 0 0 0 40%;
 }
 
+h1 {--order: 1;}
+h2 {--order: 2;}
+h3 {--order: 3;}
+h4 {--order: 4;}
+h5 {--order: 5;}
+h6 {--order: 6;}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  opacity: 0;
   line-height: 0.7;
   margin: 1rem 0 1rem 0;
   font-weight: 900;
-  animation: h1transition 1s ease-out;
-  animation-fill-mode: forwards;
+  animation: h1transition 1s ease-out forwards;
+  animation-delay: calc(var(--order) * 300ms);
 }
+
 .link,
 #active {
   color: var(--linkcolor);
@@ -148,6 +158,10 @@ h1 {
 
 .grayscl {
   filter: grayscale();
+}
+
+.grayscl:hover {
+  filter: none;
 }
 
 .sticker {
@@ -178,7 +192,7 @@ h1 {
 footer {
   display: flex;
   justify-content: space-between;
-  border-top: solid 1px #ccc;]
+  border-top: solid 1px #ccc;
 }
 
 .contact {
@@ -367,7 +381,7 @@ footer {
 }
 /* End of IMPORTANT */
 
-@media (max-width: 60em) {
+@media (max-width: 68em){
   body > * {
     width: 100%;
   }
